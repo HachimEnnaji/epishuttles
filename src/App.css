@@ -1,5 +1,7 @@
 .App {
-  text-align: center;
+  background-image: url(./space.avif);
+  height: 100vh;
+  overflow: hidden;
 }
 
 .App-logo {
@@ -12,9 +14,10 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+img.fire {
+  transform: rotate(90deg) scaleY(1.2) scaleX(1.5);
+}
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -27,12 +30,35 @@
 .App-link {
   color: #61dafb;
 }
+div.on-fire {
+  position: absolute;
+  top: 42%;
+  left: 80px;
+  animation: Meteor-spin 20s linear infinite;
+}
+#Meteor-animation {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  transform: translateX(100vw);
 
-@keyframes App-logo-spin {
+  animation: Meteor-transition infinite 5s linear;
+}
+@keyframes Meteor-transition {
   from {
-    transform: rotate(0deg);
+    transform: translateX(100vw);
+  }
+
+  to {
+    transform: translateX(-20vw);
+  }
+}
+
+@keyframes Meteor-spin {
+  from {
+    transform: rotate(360deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(0deg);
   }
 }
