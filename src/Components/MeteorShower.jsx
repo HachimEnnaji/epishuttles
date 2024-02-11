@@ -33,7 +33,7 @@ function MeteorShower() {
     }
     console.log(meteorList);
     console.log(countMeteors);
-  }, [countMeteors]);
+  }, [countMeteors, meteorList]);
 
   return (
     <div>

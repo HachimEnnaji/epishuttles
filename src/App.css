@@ -53,7 +53,10 @@ div.on-fire {
     transform: translateX(-20vw);
   }
 }
-
+img.Shuttle {
+  margin: 50vh 0;
+  transform: rotate(44deg);
+}
 @keyframes Meteor-spin {
   from {
     transform: rotate(360deg);
