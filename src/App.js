@@ -1,7 +1,8 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import MeteorShower from "./Components/MeteorShower";
-import Shuttle from "./Components/Shuttle";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Game from "./Components/Game";
+import Menu from "./Menu";
 
 function App() {
   // const [meteors, SetMeteors] = useState([]);
@@ -13,8 +14,12 @@ function App() {
 
   return (
     <div className="App position-relative">
-      <Shuttle />
-      <MeteorShower />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Menu />} />
+          <Route path="/game" element={<Game />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
