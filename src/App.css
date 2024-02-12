@@ -123,3 +123,30 @@ img.rotate {
     transform: rotate(360deg) translateX(250px) rotate(180deg);
   }
 }
+
+.font-Silkscreen {
+  font-family: "Silkscreen";
+}
+
+#button-menu {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 24px;
+  border-radius: 30px;
+  border: none;
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.3s ease, transform 0.3s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.5); /* Sfondo trasparente */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#button-menu:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+#button-menu:active {
+  transform: translateY(2px);
+  color: aquamarine;
+}
