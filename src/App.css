@@ -137,7 +137,7 @@ img.rotate {
   text-decoration: none;
   color: #fff;
   transition: background-color 0.3s ease, transform 0.3s ease-in-out;
-  background-color: rgba(0, 0, 0, 0.5); /* Sfondo trasparente */
+  background-color: transparent
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
